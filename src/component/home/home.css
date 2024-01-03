@@ -1,0 +1,6 @@
+/* rtl:end:remove */
+.text-primary {
+  --bs-text-opacity: 1;
+  --bs-primary-rgb: 30, 48, 243;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
