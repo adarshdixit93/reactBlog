@@ -51,16 +51,17 @@ export default function UseStateHook() {
         <section className="basicInfo">
           <h1 className="fw-bolder"><code>useState</code></h1>
           <p>
-            <code>useState</code> is a React Hook that lets you add a state
-            variable to your component.<br></br>
+            <code>useState</code> ek react hook hai jiski help se aap apne component me ek state variable add kar sakte hain<br></br>
             so now the question will be what exactly state is ? right
             <br></br>
-            so what happens in react is if you declare any value suppose you
-            declared <code>counter = 0 </code>
-            and then in your html you added like{" "}
-            <code>{`<p>{counter}</p>`}</code> then by default it will like 0 and
-            now what I want is I will add 2 buttons to incriment /decriment that
-            should update counter value and I created functionality like
+            to react me kya hota hai ki jab aap  koi variable declare krte hain (<code>counter = 0 </code>) and uskoi koi value assign krte hain and aap apne html me kuch is tarah se add karte hain <code>{`<p>{counter}</p> `}</code> 
+             aur wo view ke time 0 dikhata hai .
+            <br></br>
+            ab hum kya chahte hai ki mai 2 buttons add karunga incriment /decriment , to jab mai y button par click kr rha hu to counter ka value update hona chahiye.
+
+            <br></br>
+            to uske liye mai 2 functions banata hun kuch is tarah se 
+            <br></br>
             <code>
               <pre>
                 {`function handleInci(){counter = counter + 1;}`}
@@ -68,37 +69,47 @@ export default function UseStateHook() {
                 {`function handleDecr(){counter = counter - 1;}`}
               </pre>
             </code>
-            and when you click in view it is still showing as counter = 0 . so
-            now you must be thinking like there should be some issue in my
-            function . But in react it does not change automatically we need to
-            tell the browser to re-render the component in background so it will
-            display latest value . so to overcome this we use{" "}
-            <code> useState Hook </code> .<br></br>
+
+            to ab jab hum buttons pr click krte hai to dekhte hain ki value me koi changes nhi a rhe and hum sochne lagte hain ki shayad hamare function me hi koi issue hoga .
+            <br></br>
+
+            Par actually react me koi bhi value direct update nhi hoti hai uske liye humko browser ko render krna hota hai for every event .
+
+            to is problem ko overcome krne ke liye hum <code> useState Hook </code> use krte hain.
+            <br></br>
+            <br></br>
+            Now lets see ki hum is hook ko kaise use kar sakte hain: 
+            <br></br>
             <br></br>
             <h5>Syntax</h5>
             <code>const [state, setState] = useState(initialState); </code>
             <br></br>
             The convention is to name state variables like{" "}
             <code> [something, setSomething] </code>using array destructuring.
+
+            matlab y hua ki humko if useState hook use krna hai to humko yahi systex use krna hoga for code readability . ex: [argument, setArgument], [counter, setCounter], [name, setName]
+            <br></br>
             <br></br>
             <h5>Parameters</h5>
-            <b>initialState:</b> The value you want the state to be initially.
-            It can be a value of any type, but there is a special behavior for
-            functions. This argument is ignored after the initial render.{" "}
-            <br></br>If you pass a function as initialState, it will be treated
-            as an initializer function. It should be pure, should take no
-            arguments, and should return a value of any type. React will call
-            your initializer function when initializing the component, and store
-            its return value as the initial state. 
+            <b>initialState: </b> 
+            to hum kisi bhi variable ko by default kya value dena chahte hain wo hum initialState ke place pr use karenge and hum iska type kuch bhi use kr sakte hain.
+            And after hamara view render ho gya then initialState ko ignore kar diya jata hai .          
+            
             <br></br>
+            <br></br>
+
             <h5>Returns </h5>
-            <code>useState</code> returns an
-            array with exactly two values: 
-            <br></br>The current state. During the first
-            render, it will match the initialState you have passed. 
+            to useState return kya kya krta hai, lets see:
+            <br></br>
+            <code>useState</code> 
+            to useState ek array return krta hai withexactly 2 values 
+
+            <br></br>The current state. ( During the first
+            render, it will match the initialState you have passed. )
+
+            Varibale jo humne use kiya hai uski current value kya hai .
             <br></br>The set
-            function that lets you update the state to a different value and
-            trigger a re-render.
+            function : and dusra ek set function jo hamare variable / state ki value ko update karega and re-render trigger karega
           </p>
         </section>
       </div>

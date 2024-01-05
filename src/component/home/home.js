@@ -53,6 +53,60 @@ function Home() {
                   </div>
                 </div>
               </div>
+              <div className="card shadow border-0 rounded-4 mb-5">
+                <div className="card-body p-2">
+                  <div className="row align-items-center gx-2">
+                    <div className="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div className="bg-light p-2 rounded-4">
+                        <div className="text-primary fw-bolder mb-2">
+                          Use Effect Hook
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-8 text-end">
+                      <div>
+                        <Link to="/hooks/useeffecthook">Learn More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="card shadow border-0 rounded-4 mb-5">
+                <div className="card-body p-2">
+                  <div className="row align-items-center gx-2">
+                    <div className="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div className="bg-light p-2 rounded-4">
+                        <div className="text-primary fw-bolder mb-2">
+                          Use Layout Effect Hook
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-8 text-end">
+                      <div>
+                        <Link to="/hooks/uselayouteffecthook">Learn More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="card shadow border-0 rounded-4 mb-5">
+                <div className="card-body p-2">
+                  <div className="row align-items-center gx-2">
+                    <div className="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div className="bg-light p-2 rounded-4">
+                        <div className="text-primary fw-bolder mb-2">
+                          Use Ref Hook
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-8 text-end">
+                      <div>
+                        <Link to="/hooks/userefhook">Learn More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
           </div>
         </div>

@@ -54,27 +54,9 @@ export default function UseReducerHook() {
           is a React Hook that lets you add a <b>reducer</b> to your component.
           <br></br>
           <br></br>
-          So for simple value updates we use{" "}
-          <b>
-            <code>useState Hook</code>
-          </b>{" "}
-          but if the size of parameters keep incresing we can not rely on{" "}
-          <b>
-            <code>useState Hook</code>
-          </b>{" "}
-          so at that time we can use{" "}
-          <b>
-            <code>useReducer Hook .</code>
-          </b>
+          to fanda y hai ki ki jab bhi koi value update karni hoti hai to hum <code>useState Hook</code> ka use kr sakte hain .
           <br></br>
-          Using{" "}
-          <b>
-            <code>useReducer Hook</code>
-          </b>{" "}
-          we can handle multiple values in single function that is{" "}
-          <b>
-            <code>reducer()</code>
-          </b>
+          But if aapke pass bahut sare variables ho update ke liye to hum <code>useState Hook</code> pr rely nhi reh sakte to us case me hum <code>useReducer Hook</code> use krte hain .
           <br></br>
           <br></br>
           <section>
@@ -88,22 +70,20 @@ export default function UseReducerHook() {
             </code>
             <br></br>
             <div>
-              <b>reducer:</b> So it uses a reducer function and in that function
-              we can write how the function will update . It must be pure,
-              should take the state and action as arguments, and should return
-              the next state.
+              <b>reducer:</b> 
+              
+              so sabse pahle as input ye ek function use krta hai <code>reducer()</code> and us function me hum value ko update karenge uska logic likhte hain.
+
+              And Y ek PURE fucntion hona chahiye .
+              And Y function 2 argumnets lega one is state and other is type of action and then after process next state return karega
             </div>
             <div>
-              <b>initialArg:</b> The value from which the initial state is
-              calculated. It can be a value of any type. How the initial state
-              is calculated from it depends on the next <code>init</code>{" "}
-              argument.
+              <b>initialArg:</b> 
+              and second argument me <code>useReducer Hook</code> initial values ka obj leta hai .
+              And if initial values ko hum calculate krke use krna chahiye hai then hum  <code> init </code>use karte hain
             </div>
             <div>
-              <b>init (optional):</b> The initializer function that should
-              return the initial state. If it's not specified, the initial state
-              is set to initialArg. Otherwise, the initial state is set to the
-              result of calling <code>init(initialArg)</code> .
+              <b>init (optional):</b> y optional function hota hai and y only us case me hi use karte hain if hum initial values ko calculate karna chaite hain .
             </div>
             <div>
               <b>
@@ -112,14 +92,14 @@ export default function UseReducerHook() {
               </b>
             </div>
             <div>
-              <code>useReducer</code> returns an array with exactly two values:
+              <code>useReducer</code> 2 values return krta hai in array form :
             </div>
             <div>
-              <b>state:</b> The current state.
+              <b>state:</b> The current state : currently state (variable) ki value kya hai .
             </div>
             <div>
-              <b>dispatch:</b> Lets you update the state to a different value
-              and trigger a re-render.
+              <b>dispatch:</b> 
+              dispatch function jo state ki value change karega and re-render trigger karega.
               <br></br>
               <b>Example: </b> <code>{`dispatch({ type: "INCREMENT" })`}</code>
               <br></br>

@@ -3,6 +3,9 @@ import { Route, BrowserRouter as Router, Routes, Link } from "react-router-dom";
 import Home from "./component/home/home";
 import UseStateHook from "./component/hooks/usestate";
 import UseReducerHook from "./component/hooks/UseReducerHook";
+import UseEffectHook from "./component/hooks/UseEffectHook";
+import UseLayoutEffectHook from "./component/hooks/UseLayoutEffectHook";
+import UseRefHook from "./component/hooks/UseRefHook";
 
 function App() {
   return (
@@ -47,6 +50,21 @@ function App() {
             exact
             path="/hooks/usereducerhook"
             element={<UseReducerHook />}
+          ></Route>
+          <Route
+            exact
+            path="/hooks/useeffecthook"
+            element={<UseEffectHook />}
+          ></Route>
+          <Route
+            exact
+            path="/hooks/uselayouteffecthook"
+            element={<UseLayoutEffectHook />}
+          ></Route>
+          <Route
+            exact
+            path="/hooks/userefhook"
+            element={<UseRefHook />}
           ></Route>
         </Routes>
       </div>
